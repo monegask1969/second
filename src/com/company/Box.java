@@ -8,8 +8,16 @@ public class Box {
     double height;
     double depth;
 
-    void volume(){
-        System.out.println("Volume is ");
-        System.out.println(width * height * depth);
+    Box()               // ŒÕ—“–” “Œ–
+    {
+        System.out.println("Constructiong Box");
+        width = 10;
+        height = 10;
+        depth = 10;
     }
+
+    double volume(){
+        return  width * height * depth;
+    }
+
 }
