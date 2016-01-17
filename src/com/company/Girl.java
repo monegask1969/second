@@ -25,17 +25,18 @@ public class Girl {
 
     String cinema(String cinema) {
         if (cinema.equals("Horror") && acception == false) {
-            return "We will not go!";
-        } else {
-            return "Ok, I will go!";
+            return "Say about " + cinema + ": We will not go!";
+        } else
+        {
+            return "Say about " + cinema + ": Ok, I will go!";
         }
     }
 
     String restaurant(String restaurant) {
         if (restaurant.equals("McDonalds") && acception == false) {
-            return "We will not go!";
+            return "Say about " + restaurant + ": We will not go!";
         } else {
-            return "Ok, I will go!";
+            return "Say about " + restaurant + ": Ok, I will go!";
         }
     }
 

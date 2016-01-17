@@ -21,6 +21,13 @@ public class Main {
         ob.meth(ob);            //передача ссылки
         System.out.println("ob.a and ob.b after call: " + ob.a + " " + ob.b);*/
 
+        Test ob = new Test();
+        ob.a = 10;
+        ob.b = 20;
+        ob.setc(100);
+        System.out.println("a,b and c: " + ob.a + " " + ob.b + " " + ob.getc());
+
+
         Girl Katya = new Girl(17,88,false);
         Girl Masha = new Girl();
         Girl Alina = new Girl(20,52,true);
@@ -30,18 +37,19 @@ public class Main {
 
         System.out.println("Info about Katya:");
         Katya.Info();
-        System.out.println("Katya say about cinema: " + Katya.cinema(cinema));
-        System.out.println("Katya say about restaurant: " + Katya.restaurant(restaurant));
+        System.out.println(Katya.cinema(cinema));
+        System.out.println(Katya.restaurant(restaurant));
         System.out.println();
         System.out.println("Info about Masha:");
         Masha.Info();
-        System.out.println("Masha say about cinema: " + Masha.cinema(cinema));
-        System.out.println("Masha say about restaurant: " + Masha.restaurant(restaurant));
+        System.out.println(Masha.cinema(cinema));
+        System.out.println(Masha.restaurant(restaurant));
         System.out.println();
         System.out.println("Info about Alina:");
         Alina.Info();
-        System.out.println("Alina say about cinema: " + Alina.cinema(cinema));
-        System.out.println("Alina say about restaurant: " + Alina.restaurant(restaurant));
+        System.out.println(Alina.cinema(cinema));
+        System.out.println(Alina.restaurant(restaurant));
+
 
     }
 
