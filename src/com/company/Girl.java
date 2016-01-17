@@ -4,10 +4,10 @@ package com.company;
  * Created by uitschool JV on 1/17/2016.
  */
 public class Girl {
-    int age;
-    int weight;
-    boolean pretty;
-    boolean acception;
+    private int age;
+    private int weight;
+    private boolean pretty;
+    private boolean acception;
 
     Girl() {
         age = 23;
@@ -16,9 +16,12 @@ public class Girl {
         acception = true;
     }
 
-    Girl(int age, int weight, boolean pretty) {
-        this.age = age;
-        this.weight = weight;
+    Girl(int age, int weight, boolean pretty)
+    {
+        if(age > 16)this.age = age;
+        else System.out.println("Input correct age!");
+        if(weight > 45)this.weight = weight;
+        else System.out.println("Input correct weight!");
         this.pretty = pretty;
         acception = false;
     }
@@ -42,8 +45,10 @@ public class Girl {
 
     void Info()
     {
-        System.out.println("Age: " + age);
-        System.out.println("Weight: " + weight);
+        if(age == 0 || age < 0) System.out.println("Age: ERROR");
+        else System.out.println("Age: " + age);
+        if(weight < 45) System.out.println("Weight: ERROR");
+        else System.out.println("Weight: " + weight);
         System.out.println("Pretty: " + pretty);
     }
 
